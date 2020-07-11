@@ -29,11 +29,9 @@ app.get("/api/notes", function(req, res){
 app.post("/api/notes", function(req, res){
     var newNote = req.body;
     var db = JSON.parse(fs.readFileSync('./db/db.json','utf-8'));
-    console.log(db);
 
     newNote.id = db.length + 1;
     db.push(newNote);
-    console.log(`New db: ${JSON.stringify(db)}`);
 
     fs.writeFileSync("./db/db.json", JSON.stringify(db));
 });
@@ -52,6 +50,7 @@ app.delete("/api/notes/:id", function(req, res){
     console.log(`New db: ${JSON.stringify(db)}`);
 
     fs.writeFileSync("./db/db.json", JSON.stringify(db));
+    return true;
 });
 
 

@@ -2,7 +2,7 @@
 
  Version 1.0.0 
 
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/lit-wildwood-45547.herokuapp.com.svg)](https://img.shields.io/website-up-down-green-red/http/lit-wildwood-45547.herokuapp.com.svg)  [![GitHub last commit](https://img.shields.io/github/last-commit/jiberjiber/note-taker)](https://github.com/jiberjiber/note-taker/graphs/commit-activity) 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/lit-wildwood-45547.herokuapp.com.svg)](https://lit-wildwood-45547.herokuapp.com)  [![GitHub last commit](https://img.shields.io/github/last-commit/jiberjiber/note-taker)](https://github.com/jiberjiber/note-taker/graphs/commit-activity) 
 
  ## Description 
  Note-taker is a simple web application that allows you to create, save, and delete personal notes. Written using [Node.js](https://nodejs.org/en/) and run on an [Express](https://expressjs.com/) web server. 

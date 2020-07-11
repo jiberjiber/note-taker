@@ -34,6 +34,7 @@ app.post("/api/notes", function(req, res){
     db.push(newNote);
 
     fs.writeFileSync("./db/db.json", JSON.stringify(db));
+    res.send(newNote);
 });
 
 app.delete("/api/notes/:id", function(req, res){
@@ -50,7 +51,7 @@ app.delete("/api/notes/:id", function(req, res){
     console.log(`New db: ${JSON.stringify(db)}`);
 
     fs.writeFileSync("./db/db.json", JSON.stringify(db));
-    return true;
+    res.send(true);
 });
 
 

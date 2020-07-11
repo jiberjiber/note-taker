@@ -43,12 +43,9 @@ app.delete("/api/notes/:id", function(req, res){
 
     for(var i = 0; i < db.length; i++){
         if(db[i].id == reqId){
-            console.log(`Deleting ${JSON.stringify(db[i])}`);
             db.splice(i,1);
         }
     }
-
-    console.log(`New db: ${JSON.stringify(db)}`);
 
     fs.writeFileSync("./db/db.json", JSON.stringify(db));
     res.send(true);
